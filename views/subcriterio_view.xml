@@ -1,0 +1,52 @@
+<odoo>
+    <record id="subcriterio_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.subcriterio</field>
+        <field name="arch" type="xml">
+            <form string="Verificar el Subcriterio">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos del Subcriterio"></separator>
+                    <group>
+                        <field name="nombre_subcriterio"/>
+                        <field name="estado_subcriterio"/>
+                        <field name="tipo_subcriterio"/>
+                        <field name="descripcion"/>
+                        <field name="fecha_creacion"/>
+                        <field name="evidencia_ids"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.subcriterio_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.subcriterio.tree.view</field>
+        <field name="model">evaluacion.subcriterio</field>
+        <field name="arch" type="xml">
+            <tree string="Criterio">
+                <field name="nombre_subcriterio"/>
+                <field name="estado_subcriterio"/>
+                <field name="tipo_subcriterio"/>
+                <field name="descripcion"/>
+                <field name="fecha_creacion"/>
+                <field name="evidencia_ids"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_subcriterio" model="ir.actions.act_window">
+        <field name="name">Registro del Subcriterio de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.subcriterio</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

@@ -1,0 +1,46 @@
+<odoo>
+    <record id="malla_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.malla</field>
+        <field name="arch" type="xml">
+            <form string="Verificar la Malla">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Malla"></separator>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="fecha_origen"/>
+                        <field name="descripcion"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.practicas_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.malla.tree.view</field>
+        <field name="model">evaluacion.malla</field>
+        <field name="arch" type="xml">
+            <tree string="Malla">
+                <field name="nombre"/>
+                <field name="fecha_origen"/>
+                <field name="descripcion"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_malla" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.malla</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

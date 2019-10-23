@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <act_window id="menu_root"
+        name="Sistema de Evaluacion"
+        res_model="evaluacion.periodo_evaluacion"
+        view_id="periodoEvaluacion_evaluacion_form_view"
+        view_mode= "tree, form"/>
+
+    <menuitem id="evaluacion_menu_root" sequence="1" name="Evaluaciòn"/>
+
+    <menuitem id="evaluaciones_menu_cateory" name="Administrar Evaluacion" parent="evaluacion_menu_root" sequence ="1"/>
+
+    <menuitem id="action_evaluacion_periodoEvaluacion" sequence="1" name="Periodo Evaluacion" parent="evaluaciones_menu_cateory" action="action_evaluacion_periodoEvaluacion"/>
+
+    <menuitem id="action_evaluacion_periodoAcademico" sequence="2" name="Periodo Academico" parent="evaluaciones_menu_cateory" action="action_evaluacion_periodoAcademico"/>
+
+    <menuitem id="action_evaluacion_criterio" sequence="3" name="Criterio" parent="evaluaciones_menu_cateory" action="action_evaluacion_criterio"/>
+
+    <menuitem id="action_evaluacion_carrera" sequence="4" name="Carrera" parent="evaluaciones_menu_cateory" action="action_evaluacion_carrera"/>
+
+    <menuitem id="action_evaluacion_practicas" sequence="5" name="Practicas" parent="evaluaciones_menu_cateory" action="action_evaluacion_practicas"/>
+
+    <menuitem id="action_evaluacion_malla" sequence="6" name="Malla" parent="evaluaciones_menu_cateory" action="action_evaluacion_malla"/>
+
+    <menuitem id="action_evaluacion_subcriterio" sequence="7" name="Subcriterio" parent="evaluaciones_menu_cateory" action="action_evaluacion_subcriterio"/>
+
+    <menuitem id="action_evaluacion_evidencia" sequence="8" name="Evidencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_evidencia"/>
+
+</odoo>

@@ -1,0 +1,50 @@
+<odoo>
+    <record id="periodoAcademico_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.periodo_academico</field>
+        <field name="arch" type="xml">
+            <form string="Verificar el Periodo Académico">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos del Periodo de Evaluación"></separator>
+                    <group>
+                        <field name="fecha_inicio"/>
+                        <field name="fecha_fin"/>
+                        <field name="estado"/>
+                        <field name="carrera_ids"/>
+
+
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.periodoAcademico_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.periodoAcademico.tree.view</field>
+        <field name="model">evaluacion.periodo_academico</field>
+        <field name="arch" type="xml">
+            <tree string="Evaluacion">
+                    <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>
+                    <field name="estado"/>
+                    <field name="carrera_ids"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_periodoAcademico" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.periodo_academico</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

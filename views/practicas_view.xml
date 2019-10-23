@@ -1,0 +1,46 @@
+<odoo>
+    <record id="practicas_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.practicas</field>
+        <field name="arch" type="xml">
+            <form string="Verificar la Practica">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Practica"></separator>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="descrpcion"/>
+                        <field name="informe"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.practicas_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.practicas.tree.view</field>
+        <field name="model">evaluacion.practicas</field>
+        <field name="arch" type="xml">
+            <tree string="Practicas">
+                <field name="nombre"/>
+                <field name="descrpcion"/>
+                <field name="informe"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_practicas" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.practicas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

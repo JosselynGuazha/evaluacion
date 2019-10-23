@@ -1,0 +1,49 @@
+<odoo>
+    <record id="evidencia_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.evidencia</field>
+        <field name="arch" type="xml">
+            <form string="Verificar la Evidencia">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Evidencia"></separator>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="referencia"/>
+                        <field name="fecha"/>
+                        <field name="archivo"/>
+
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.evidencia_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.evidencia.tree.view</field>
+        <field name="model">evaluacion.evidencia</field>
+        <field name="arch" type="xml">
+            <tree string="Criterio">
+                <field name="nombre"/>
+                <field name="referencia"/>
+                <field name="fecha"/>
+                <field name="archivo"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_evidencia" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.evidencia</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>
