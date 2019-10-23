@@ -38,6 +38,10 @@
             </tree>
         </field>
 
+<!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados
+    Hola Albert esto esta  mal ejejejej :)
+
+    -->
     </record>
     <record id="action_evaluacion_ciclo" model="ir.actions.act_window">
         <field name="name">Registro de Acta de Entrega del Evaluacion</field>
