@@ -6,7 +6,6 @@
         <field name="arch" type="xml">
             <form string="Verificar la Evidencia">
                 <header>
-
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Evidencia"></separator>

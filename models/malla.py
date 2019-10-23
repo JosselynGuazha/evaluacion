@@ -13,5 +13,6 @@ class Malla(models.Model):
     descripcion = fields.Char('Descripcion de la Malla')
 
     carrera_id = fields.Many2one('evaluacion.carrera', 'Carrera')
+    ciclo_ids = fields.One2many('evaluacion.ciclo', 'malla_id', string="Ciclo")
 
     #tag_ids = fields.Many2many('evaluacion.requisitos')

@@ -10,7 +10,10 @@ class Ciclo(models.Model):
 
     nombre = fields.Char('Nombre del Ciclo')
     numero= fields.Integer('Ciclo')
-    descrpcion = fields.Char('Descripcion del Ciclo')
+    descripcion = fields.Char('Descripcion del Ciclo')
+
+    malla_id = fields.Many2one('evaluacion.malla', 'Malla')
+
 
 
 
