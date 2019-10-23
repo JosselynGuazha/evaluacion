@@ -1,0 +1,48 @@
+<odoo>
+    <record id="ciclo_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.ciclo</field>
+        <field name="arch" type="xml">
+            <form string="Verificar Ciclo">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos del Ciclo"></separator>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="numero"/>
+                        <field name="descripcion"/>
+
+
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.ciclo_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.ciclo.tree.view</field>
+        <field name="model">evaluacion.ciclo</field>
+        <field name="arch" type="xml">
+            <tree string="Ciclo">
+                <field name="nombre"/>
+                <field name="numero"/>
+                <field name="descripcion"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_ciclo" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.ciclo</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>
