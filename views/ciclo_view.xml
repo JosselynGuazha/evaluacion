@@ -23,7 +23,10 @@
         </field>
     </record>
 
-    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados
+    Hola Albert esto esta  mal ejejejej :)
+
+    -->
     <record id="evaluacion.ciclo_tree_view" model="ir.ui.view">
         <field name="name">evaluacion.ciclo.tree.view</field>
         <field name="model">evaluacion.ciclo</field>
