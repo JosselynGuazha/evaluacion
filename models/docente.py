@@ -14,4 +14,7 @@ class Docente(models.Model):
     direccion = fields.Char('Dirección del Docente')
 
 
+    cursos_realizados_ids = fields.One2many('evaluacion.cursos_realizados', 'docente_id', string="Cursos realizados")
+
+
     #tag_ids = fields.Many2many('evaluacion.requisitos')
