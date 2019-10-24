@@ -32,5 +32,8 @@
 
     <menuitem id="action_evaluacion_asignatura" sequence="11" name="Asignatura" parent="evaluaciones_menu_cateory" action="action_evaluacion_asignatura"/>
 
+    <menuitem id="action_evaluacion_cursos_realizados" sequence="12" name="Cursos realizados" parent="evaluaciones_menu_cateory" action="action_evaluacion_cursos_realizados"/>
+
+
 
 </odoo>
