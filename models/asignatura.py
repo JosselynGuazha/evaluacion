@@ -12,6 +12,9 @@ class Asignatura(models.Model):
     codigo= fields.Char('Código')
     silabo = fields.Binary('Silabo')
 
+    ciclo_id = fields.Many2one('evaluacion.ciclo', 'Ciclo')
+    docente_id = fields.Many2one('evaluacion.docente', 'Docente')
+
 
 
 

@@ -14,8 +14,7 @@
                         <field name="nombre"/>
                         <field name="numero"/>
                         <field name="descripcion"/>
-
-
+                        <field name="asignatura_ids"/>
                     </group>
 
                 </sheeet>
@@ -35,6 +34,7 @@
                 <field name="nombre"/>
                 <field name="numero"/>
                 <field name="descripcion"/>
+                <field name="asignatura_ids"/>
             </tree>
         </field>
 

@@ -28,6 +28,10 @@
 
     <menuitem id="action_evaluacion_ciclo" sequence="9" name="Ciclo" parent="evaluaciones_menu_cateory" action="action_evaluacion_ciclo"/>
 
+<<<<<<< HEAD
     <menuitem id="action_evaluacion_docente" sequence="10" name="Docente" parent="evaluaciones_menu_cateory" action="action_evaluacion_docente"/>
+=======
+    <menuitem id="action_evaluacion_asignatura" sequence="10" name="Asignatura" parent="evaluaciones_menu_cateory" action="action_evaluacion_asignatura"/>
+>>>>>>> 894d43837e21dfe12ffe701fcd11b97dfd752868
 
 </odoo>
