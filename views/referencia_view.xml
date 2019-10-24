@@ -1,0 +1,49 @@
+<odoo>
+    <record id="referencia_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.referencia</field>
+        <field name="arch" type="xml">
+            <form string="Verificar Referencia">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Referencia"></separator>
+                    <group>
+                        <field name="nombre_referencia"/>
+                        <field name="institucion"/>
+                        <field name="correo"/>
+                        <field name="telefono"/>
+                        <field name="certificado"/>
+                    </group>
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.referencia_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.referencia.tree.view</field>
+        <field name="model">evaluacion.referencia</field>
+        <field name="arch" type="xml">
+            <tree string="Referencia:">
+                <field name="nombre_referencia"/>
+                <field name="institucion"/>
+                <field name="correo"/>
+                <field name="telefono"/>
+                <field name="certificado"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_referencia" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.referencia</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

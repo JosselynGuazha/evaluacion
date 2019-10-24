@@ -40,6 +40,7 @@
         'views/cursos_realizados_view.xml',
         'views/experiencia_view.xml',
         'views/evaluacion_view.xml',
+        'views/referencia_view.xml',
         'views/main_menu_view.xml',
 
     ],
