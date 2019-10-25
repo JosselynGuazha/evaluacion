@@ -9,36 +9,28 @@
     <menuitem id="evaluacion_menu_root" sequence="1" name="Evaluaciòn"/>
 
     <menuitem id="evaluaciones_menu_cateory" name="Administrar Evaluacion" parent="evaluacion_menu_root" sequence ="1"/>
-
     <menuitem id="action_evaluacion_periodoEvaluacion" sequence="1" name="Periodo Evaluacion" parent="evaluaciones_menu_cateory" action="action_evaluacion_periodoEvaluacion"/>
-
     <menuitem id="action_evaluacion_periodoAcademico" sequence="2" name="Periodo Academico" parent="evaluaciones_menu_cateory" action="action_evaluacion_periodoAcademico"/>
 
-    <menuitem id="action_evaluacion_criterio" sequence="3" name="Criterio" parent="evaluaciones_menu_cateory" action="action_evaluacion_criterio"/>
+    <menuitem id="criterios_evaluacion_menu_cateory" name="Criterios de Evaluacion" parent="evaluacion_menu_root" sequence ="2"/>
+    <menuitem id="action_evaluacion_criterio" sequence="1" name="Criterio" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_criterio"/>
+    <menuitem id="action_evaluacion_subcriterio" sequence="2" name="Subcriterio" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_subcriterio"/>
 
-    <menuitem id="action_evaluacion_carrera" sequence="4" name="Carrera" parent="evaluaciones_menu_cateory" action="action_evaluacion_carrera"/>
+    <menuitem id="informacion_carrera_menu_cateory" name="Información de la Carrera" parent="evaluacion_menu_root" sequence ="3"/>
+    <menuitem id="action_evaluacion_carrera" sequence="1" name="Carrera" parent="informacion_carrera_menu_cateory" action="action_evaluacion_carrera"/>
+    <menuitem id="action_evaluacion_malla" sequence="2" name="Malla" parent="informacion_carrera_menu_cateory" action="action_evaluacion_malla"/>
+    <menuitem id="action_evaluacion_ciclo" sequence="3" name="Ciclo" parent="informacion_carrera_menu_cateory" action="action_evaluacion_ciclo"/>
+    <menuitem id="action_evaluacion_practicas" sequence="4" name="Practicas" parent="informacion_carrera_menu_cateory" action="action_evaluacion_practicas"/>
 
-    <menuitem id="action_evaluacion_practicas" sequence="5" name="Practicas" parent="evaluaciones_menu_cateory" action="action_evaluacion_practicas"/>
 
-    <menuitem id="action_evaluacion_malla" sequence="6" name="Malla" parent="evaluaciones_menu_cateory" action="action_evaluacion_malla"/>
+    <menuitem id="informacion_docente_menu_cateory" name="Información del Docente" parent="evaluacion_menu_root" sequence ="4"/>
+    <menuitem id="action_evaluacion_docente" sequence="1" name="Docente" parent="informacion_docente_menu_cateory" action="action_evaluacion_docente"/>
 
-    <menuitem id="action_evaluacion_subcriterio" sequence="7" name="Subcriterio" parent="evaluaciones_menu_cateory" action="action_evaluacion_subcriterio"/>
+    <!-- <menuitem id="action_evaluacion_evaluacionDocente" sequence="2" name="Evaluacion Docente" parent="informacion_docente_menu_cateory" action="action_evaluacion_evaluacionDocente"/> -->
 
-    <menuitem id="action_evaluacion_evidencia" sequence="8" name="Evidencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_evidencia"/>
 
-    <menuitem id="action_evaluacion_ciclo" sequence="9" name="Ciclo" parent="evaluaciones_menu_cateory" action="action_evaluacion_ciclo"/>
+<!--    <menuitem id="action_evaluacion_evidencia" sequence="10" name="Evidencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_evidencia"/>
 
-    <menuitem id="action_evaluacion_docente" sequence="10" name="Docente" parent="evaluaciones_menu_cateory" action="action_evaluacion_docente"/>
+    <menuitem id="action_evaluacion_asignatura" sequence="11" name="Asignatura" parent="evaluaciones_menu_cateory" action="action_evaluacion_asignatura"/> -->
 
-    <menuitem id="action_evaluacion_asignatura" sequence="11" name="Asignatura" parent="evaluaciones_menu_cateory" action="action_evaluacion_asignatura"/>
-
-    <menuitem id="action_evaluacion_cursos_realizados" sequence="12" name="Cursos realizados" parent="evaluaciones_menu_cateory" action="action_evaluacion_cursos_realizados"/>
-
-    <menuitem id="action_evaluacion_experiencia" sequence="13" name="Experiencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_experiencia"/>
-
-    <menuitem id="action_evaluacion_evaluacionDocente" sequence="14" name="Evaluacion Docente" parent="evaluaciones_menu_cateory" action="action_evaluacion_evaluacionDocente"/>
-
-    <menuitem id="action_evaluacion_referencia" sequence="15" name="Referencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_referencia"/>
-
-    
 </odoo>

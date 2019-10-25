@@ -11,7 +11,6 @@
                 <sheeet>
                     <separator string=" Datos de la Evaluación"></separator>
                     <group>
-                        <field name="nombre"/>
                         <field name="institucion"/>
                         <field name="fecha"/>
                         <field name="archivo"/>
@@ -28,7 +27,6 @@
         <field name="model">evaluacion.evaluacion</field>
         <field name="arch" type="xml">
             <tree string="Evaluacion del Docente">
-                <field name="nombre"/>
                 <field name="institucion"/>
                 <field name="fecha"/>
                 <field name="archivo"/>

@@ -14,10 +14,7 @@ class Docente(models.Model):
     direccion = fields.Char('Dirección del Docente')
 
     asignatura_ids = fields.One2many('evaluacion.asignatura', 'docente_id', string="Asigantura")
-    cursos_realizados_ids = fields.One2many('evaluacion.cursos_realizados', 'docente_id', string="Cursos Realzados")
+    cursos_realizados_ids = fields.One2many('evaluacion.cursos_realizados', 'docente_id', string="Cursos realizados")
     experiencia_ids = fields.One2many('evaluacion.experiencia', 'docente_id', string="Experiencia")
     referencia_ids = fields.One2many('evaluacion.referencia', 'docente_id', string="Referencia")
     evaluacion_ids = fields.One2many('evaluacion.evaluacion', 'docente_id', string="Evaluación")
-
-
-
