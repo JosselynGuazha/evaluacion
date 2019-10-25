@@ -18,3 +18,10 @@ class Docente(models.Model):
 
 
 
+<<<<<<< HEAD
+    cursos_realizados_ids = fields.One2many('evaluacion.cursos_realizados', 'docente_id', string="Cursos realizados")
+
+
+    #tag_ids = fields.Many2many('evaluacion.requisitos')
+=======
+>>>>>>> 894d43837e21dfe12ffe701fcd11b97dfd752868

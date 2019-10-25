@@ -35,8 +35,15 @@
         'views/evidencia_view.xml',
         'views/malla_view.xml',
         'views/ciclo_view.xml',
-        'views/asignatura_view.xml',
+<<<<<<< HEAD
         'views/docente_view.xml',
+=======
+        'views/asignatura_view.xml',
+<<<<<<< HEAD
+        'views/docente_view.xml',
+=======
+>>>>>>> 894d43837e21dfe12ffe701fcd11b97dfd752868
+>>>>>>> 1308b719574d1471d8ea99367cc5b7b3fe295b0b
         'views/main_menu_view.xml',
 
     ],

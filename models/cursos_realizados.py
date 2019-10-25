@@ -15,6 +15,7 @@ class CursosRealizados(models.Model):
     certificado=fields.Binary('Certificado del Curso')
     docente_id = fields.Many2one('evaluacion.docente', 'Docente')
 
+    docente_id = fields.Many2one('evaluacion.docente', 'Docente')
 
 
 
