@@ -11,5 +11,9 @@ from . import carrera
 from . import practicas
 from . import malla
 from . import ciclo
-
+from . import asignatura
+from . import experiencia
+from . import cursos_realizados
+from . import asignatura
+from . import evaluacion
 
