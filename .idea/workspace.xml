@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26c22003-1f2c-4706-81f4-5b2a839d8cbe" name="Default Changelist" comment="3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cursos_realizados.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursos_realizados.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/docente.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/docente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main_menu_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_menu_view.xml" afterDir="false" />
-    </list>
+    <list default="true" id="26c22003-1f2c-4706-81f4-5b2a839d8cbe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/views/docente_view.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-49">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -267,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571966857247</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3">
+      <created>1571972739745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571972739746</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -570,7 +571,7 @@
     <entry file="file://$PROJECT_DIR$/views/docente_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-49">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
