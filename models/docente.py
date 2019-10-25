@@ -13,5 +13,7 @@ class Docente(models.Model):
     telefono = fields.Char('Número de telefono')
     direccion = fields.Char('Dirección del Docente')
 
+    asignatura_ids = fields.One2many('evaluacion.asignatura', 'docente_id', string="Asigantura")
 
-    #tag_ids = fields.Many2many('evaluacion.requisitos')
+
+
