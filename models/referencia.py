@@ -14,6 +14,8 @@ class Referencia(models.Model):
     telefono = fields.Char('Telefono o Celular de la Referencia')
     certificado=fields.Binary('Certificado del Curso')
 
+    #docente_id = fields.Many2one('evaluacion.docente', 'Docente')
+
 
 
 

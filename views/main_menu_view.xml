@@ -34,6 +34,9 @@
 
     <menuitem id="action_evaluacion_cursos_realizados" sequence="12" name="Cursos realizados" parent="evaluaciones_menu_cateory" action="action_evaluacion_cursos_realizados"/>
 
+    <menuitem id="action_evaluacion_experiencia" sequence="13" name="Experiencia" parent="evaluaciones_menu_cateory" action="action_evaluacion_experiencia"/>
+
+    <menuitem id="action_evaluacion_evaluacionDocente" sequence="14" name="Evaluacion Docente" parent="evaluaciones_menu_cateory" action="action_evaluacion_evaluacionDocente"/>
 
 
 </odoo>

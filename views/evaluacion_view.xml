@@ -1,0 +1,48 @@
+<odoo>
+    <record id="evaluacionDocente_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.evaluacion</field>
+        <field name="arch" type="xml">
+            <form string="Verificar Evaluacion del Docente">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Evaluación"></separator>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="institucion"/>
+                        <field name="fecha"/>
+                        <field name="archivo"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.evaluacionDocente_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.evaluacionDocente.tree.view</field>
+        <field name="model">evaluacion.evaluacion</field>
+        <field name="arch" type="xml">
+            <tree string="Evaluacion del Docente">
+                <field name="nombre"/>
+                <field name="institucion"/>
+                <field name="fecha"/>
+                <field name="archivo"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_evaluacionDocente" model="ir.actions.act_window">
+        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="res_model">evaluacion.evaluacion</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

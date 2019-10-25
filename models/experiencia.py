@@ -14,6 +14,9 @@ class Experiencia(models.Model):
     cargo = fields.Char('Cargo')
     certificado_trabajo=fields.Binary('Certificado de Trabajo')
 
+    docente_id = fields.Many2one('evaluacion.docente', 'Docente')
+
+
 
 
 

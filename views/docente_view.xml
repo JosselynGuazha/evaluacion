@@ -17,6 +17,7 @@
                         <field name="telefono"/>
                         <field name="direccion"/>
                         <field name="cursos_realizados_ids"/>
+                        <field name="experiencia_ids"/>
                     </group>
 
                 </sheeet>
@@ -36,6 +37,7 @@
                 <field name="telefono"/>
                 <field name="direccion"/>
                 <field name="cursos_realizados_ids"/>
+                <field name="experiencia_ids"/>
             </tree>
         </field>
 

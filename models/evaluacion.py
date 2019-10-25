@@ -13,6 +13,8 @@ class Evaluacion(models.Model):
     fecha= fields.Date('Fecha de Calificación')
     archivo=fields.Binary('Calificación')
 
+    docente_id = fields.Many2one('evaluacion.docente', 'Docente')
+
 
 
 
