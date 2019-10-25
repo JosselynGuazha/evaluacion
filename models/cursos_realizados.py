@@ -13,6 +13,7 @@ class CursosRealizados(models.Model):
     fecha_inicio= fields.Date('Fecha de Inicio')
     fecha_fin = fields.Date('Fecha de Finalización')
     certificado=fields.Binary('Certificado del Curso')
+    docente_id = fields.Many2one('evaluacion.docente', 'Docente')
 
 
 

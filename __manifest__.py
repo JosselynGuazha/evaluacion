@@ -36,6 +36,7 @@
         'views/malla_view.xml',
         'views/ciclo_view.xml',
         'views/asignatura_view.xml',
+        'views/docente_view.xml',
         'views/main_menu_view.xml',
 
     ],
