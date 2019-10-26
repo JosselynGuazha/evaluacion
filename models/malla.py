@@ -8,7 +8,7 @@ class Malla(models.Model):
     _description = 'Malla'
 
 
-    nombre = fields.Char('Nombre Practicas Pre-Profesionales')
+    nombre = fields.Char('Nombre de la Malla')
     fecha_origen= fields.Char('Fecha Origen de la Malla')
     descripcion = fields.Char('Descripcion de la Malla')
 

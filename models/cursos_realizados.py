@@ -8,7 +8,7 @@ class CursosRealizados(models.Model):
     _description = 'Cursos Realizados'
 
 
-    nombre_curso = fields.Char('Nombre de la Institución')
+    nombre_curso = fields.Char('Nombre del Curso realizado')
     institucion = fields.Char('Nombre de la Institución')
     fecha_inicio= fields.Date('Fecha de Inicio')
     fecha_fin = fields.Date('Fecha de Finalización')
