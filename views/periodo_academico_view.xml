@@ -9,13 +9,15 @@
 
                 </header>
                 <sheeet>
-                    <separator string=" Datos del Periodo de Evaluación"></separator>
+                    <separator string=" Datos del Periodo Académico"></separator>
                     <group name="group_top">
+                      <group name="group_left">
                         <field name="fecha_inicio"/>
                         <field name="fecha_fin"/>
-                        <group name="group_right">
-                            <field name="estado"/>
-                        </group>
+                      </group>
+                      <group name="group_right">
+                        <field name="estado"/>
+                      </group>
                     </group>
                     <group>
                         <field name="carrera_ids" nolabel="1"/>
@@ -41,7 +43,7 @@
 
     </record>
     <record id="action_evaluacion_periodoAcademico" model="ir.actions.act_window">
-        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="name">Registro de Periodo Académico</field>
         <field name="res_model">evaluacion.periodo_academico</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">tree,form</field>

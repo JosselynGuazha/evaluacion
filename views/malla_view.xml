@@ -43,7 +43,7 @@
 
     </record>
     <record id="action_evaluacion_malla" model="ir.actions.act_window">
-        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="name">Registro de la Malla</field>
         <field name="res_model">evaluacion.malla</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">tree,form</field>

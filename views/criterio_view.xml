@@ -40,7 +40,7 @@
 
     </record>
     <record id="action_evaluacion_criterio" model="ir.actions.act_window">
-        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="name">Registro de Criterio</field>
         <field name="res_model">evaluacion.criterio</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">tree,form</field>
