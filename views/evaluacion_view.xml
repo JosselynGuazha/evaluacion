@@ -10,7 +10,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Evaluación"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="institucion"/>
                         <field name="fecha"/>
                         <field name="archivo"/>

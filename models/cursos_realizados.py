@@ -10,8 +10,8 @@ class CursosRealizados(models.Model):
 
     nombre_curso = fields.Char('Nombre del Curso realizado')
     institucion = fields.Char('Nombre de la Institución')
-    fecha_inicio= fields.Date('Fecha de Inicio')
-    fecha_fin = fields.Date('Fecha de Finalización')
+    fecha_inicio= fields.Date('Fecha de Inicio del Curso')
+    fecha_fin = fields.Date('Fecha de Finalización Curso')
     certificado=fields.Binary('Certificado del Curso')
 
     docente_id = fields.Many2one('evaluacion.docente', 'Docente')
@@ -21,4 +21,3 @@ class CursosRealizados(models.Model):
 
 
 
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

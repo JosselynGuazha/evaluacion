@@ -9,7 +9,7 @@
         Sistema desarrollado para la evaluación del ISTLA
     """,
 
-    'author': "Josselyn",
+    'author': "JosselynG. :)",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing

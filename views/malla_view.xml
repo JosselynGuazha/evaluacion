@@ -10,12 +10,17 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Malla"></separator>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="nombre"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="fecha_origen"/>
+                            <field name="descripcion"/>
+                        </group>
+                    </group>
                     <group>
-                        <field name="nombre"/>
-                        <field name="fecha_origen"/>
-                        <field name="descripcion"/>
-                        <field name="ciclo_ids"/>
-
+                        <field name="ciclo_ids" nolabel="1"/>
                     </group>
 
                 </sheeet>

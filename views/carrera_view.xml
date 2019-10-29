@@ -10,13 +10,21 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Carrera"></separator>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="nombre_carrera"/>
+                            <field name="codigo_carrera"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="modalidad"/>
+                            <field name="descripcion"/>
+                        </group>
+                    </group>
                     <group>
-                        <field name="nombre_carrera"/>
-                        <field name="codigo_carrera"/>
-                        <field name="modalidad"/>
-                        <field name="descripcion"/>
-                        <field name="practicas_ids"/>
-                        <field name="malla_ids"/>
+                        <field name="practicas_ids" nolabel="1"/>
+                    </group>
+                    <group>
+                        <field name="malla_ids" nolabel="1"/>
                     </group>
 
                 </sheeet>

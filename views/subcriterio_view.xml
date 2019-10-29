@@ -6,17 +6,22 @@
         <field name="arch" type="xml">
             <form string="Verificar el Subcriterio">
                 <header>
-
                 </header>
                 <sheeet>
                     <separator string=" Datos del Subcriterio"></separator>
                     <group>
-                        <field name="nombre_subcriterio"/>
-                        <field name="estado_subcriterio"/>
-                        <field name="tipo_subcriterio"/>
-                        <field name="descripcion"/>
-                        <field name="fecha_creacion"/>
-                        <field name="evidencia_ids"/>
+                        <group name="group_left">
+                            <field name="nombre_subcriterio"/>
+                            <field name="tipo_subcriterio"/>
+                            <field name="fecha_creacion"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="estado_subcriterio"/>
+                            <field name="descripcion"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="evidencia_ids" nolebel="1"/>
                     </group>
 
                 </sheeet>

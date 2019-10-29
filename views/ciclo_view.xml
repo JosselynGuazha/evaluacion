@@ -10,11 +10,17 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos del Ciclo"></separator>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="nombre"/>
+                            <field name="numero"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="descripcion"/>
+                        </group>
+                    </group>
                     <group>
-                        <field name="nombre"/>
-                        <field name="numero"/>
-                        <field name="descripcion"/>
-                        <field name="asignatura_ids"/>
+                        <field name="asignatura_ids" nolabel="1"/>
                     </group>
 
                 </sheeet>
@@ -38,10 +44,10 @@
             </tree>
         </field>
 
-<!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados
-    Hola Albert esto esta  mal ejejejej :)
+        <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados
+            Hola Albert esto esta  mal ejejejej :)
 
-    -->
+            -->
     </record>
     <record id="action_evaluacion_ciclo" model="ir.actions.act_window">
         <field name="name">Registro de Acta de Entrega del Evaluacion</field>

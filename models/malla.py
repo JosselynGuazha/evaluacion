@@ -9,7 +9,7 @@ class Malla(models.Model):
 
 
     nombre = fields.Char('Nombre de la Malla')
-    fecha_origen= fields.Char('Fecha Origen de la Malla')
+    fecha_origen= fields.Date('Fecha Origen de la Malla')
     descripcion = fields.Char('Descripcion de la Malla')
 
     carrera_id = fields.Many2one('evaluacion.carrera', 'Carrera')

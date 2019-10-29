@@ -8,7 +8,6 @@ class Evaluacion(models.Model):
     _description = 'Evaluación'
 
 
-    #nombre = fields.Char('Nombre')
     institucion = fields.Char('Nombre de la Institución')
     fecha= fields.Date('Fecha de Calificación')
     archivo=fields.Binary('Calificación')
@@ -20,4 +19,3 @@ class Evaluacion(models.Model):
 
 
 
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

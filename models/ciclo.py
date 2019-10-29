@@ -9,8 +9,8 @@ class Ciclo(models.Model):
 
 
     nombre = fields.Char('Nombre del Ciclo')
-    numero= fields.Integer('Ciclo')
-    descripcion = fields.Char('Descripcion del Ciclo')
+    numero= fields.Integer('Número de Ciclo')
+    descripcion = fields.Char('Descripción del Ciclo')
 
     malla_id = fields.Many2one('evaluacion.malla', 'Malla')
     asignatura_ids = fields.One2many('evaluacion.asignatura', 'ciclo_id', string="Asignatura")
@@ -18,4 +18,3 @@ class Ciclo(models.Model):
 
 
 
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

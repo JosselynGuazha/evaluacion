@@ -16,8 +16,3 @@ class Asignatura(models.Model):
     docente_id = fields.Many2one('evaluacion.docente', 'Docente')
 
 
-
-
-
-
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

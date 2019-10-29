@@ -10,7 +10,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos del Docente"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="cedula"/>
                         <field name="nombre"/>
                         <field name="correo_electronico"/>

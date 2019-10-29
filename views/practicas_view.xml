@@ -10,7 +10,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Practica"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="nombre"/>
                         <field name="descrpcion"/>
                         <field name="informe"/>

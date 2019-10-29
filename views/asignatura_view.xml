@@ -10,7 +10,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Asignatura"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="nombre"/>
                         <field name="codigo"/>
                         <field name="silabo"/>

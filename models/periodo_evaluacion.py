@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*
 
 from odoo import models, fields, api
 
@@ -16,5 +16,3 @@ class PeriodoEvaluacion(models.Model):
 
     periodoAcademico_ids = fields.One2many('evaluacion.periodo_academico', 'periodoEvaluacion_id', string="Periodos Academicos")
     criterio_ids = fields.One2many('evaluacion.criterio', 'periodoEvaluacion_id', string="Criterio")
-
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

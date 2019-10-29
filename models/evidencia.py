@@ -12,8 +12,6 @@ class Evidencia(models.Model):
     referencia = fields.Char('Referencia del Archivo')
     fecha = fields.Date('Fecha de carga')
     archivo = fields.Binary('Archivo')
+
     subcriterio_id = fields.Many2one('evaluacion.subcriterio', 'Subcriterio')
 
-
-
-    #tag_ids = fields.Many2many('evaluacion.requisitos')

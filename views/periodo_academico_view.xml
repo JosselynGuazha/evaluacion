@@ -10,13 +10,15 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos del Periodo de Evaluación"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="fecha_inicio"/>
                         <field name="fecha_fin"/>
-                        <field name="estado"/>
-                        <field name="carrera_ids"/>
-
-
+                        <group name="group_right">
+                            <field name="estado"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="carrera_ids" nolabel="1"/>
                     </group>
 
                 </sheeet>
@@ -30,10 +32,10 @@
         <field name="model">evaluacion.periodo_academico</field>
         <field name="arch" type="xml">
             <tree string="Evaluacion">
-                    <field name="fecha_inicio"/>
-                    <field name="fecha_fin"/>
-                    <field name="estado"/>
-                    <field name="carrera_ids"/>
+                <field name="fecha_inicio"/>
+                <field name="fecha_fin"/>
+                <field name="estado"/>
+                <field name="carrera_ids"/>
             </tree>
         </field>
 

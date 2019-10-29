@@ -9,7 +9,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos de la Evidencia"></separator>
-                    <group>
+                    <group name="group_top">
                         <field name="nombre"/>
                         <field name="referencia"/>
                         <field name="fecha"/>

@@ -22,4 +22,3 @@ class Experiencia(models.Model):
 
 
 
-    #tag_ids = fields.Many2many('evaluacion.requisitos')
