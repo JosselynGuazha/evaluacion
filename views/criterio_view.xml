@@ -10,7 +10,7 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos del Criterio"></separator>
-                    <group name="group_top">
+                    <group name="">
                         <field name="nombre_criterio"/>
                         <field name="periodo_inicio"/>
                         <field name="periodo_fin"/>

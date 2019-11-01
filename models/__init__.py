@@ -17,5 +17,6 @@ from . import experiencia
 from . import cursos_realizados
 from . import asignatura
 from . import evaluacion
+from . import indicador
 
 

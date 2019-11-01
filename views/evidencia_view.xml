@@ -10,11 +10,14 @@
                 <sheeet>
                     <separator string=" Datos de la Evidencia"></separator>
                     <group name="group_top">
+                        <field name="criterio_id"/>
+                        <field name="subcriterio_id"/>
+                        <field name="indicador_id"/>
+                        <field name="elementos_fundamentales"/>
+                        <field name="fecha"/>
                         <field name="nombre"/>
                         <field name="referencia"/>
-                        <field name="fecha"/>
                         <field name="archivo"/>
-
                     </group>
 
                 </sheeet>
@@ -37,7 +40,7 @@
 
     </record>
     <record id="action_evaluacion_evidencia" model="ir.actions.act_window">
-        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="name">Registro de Evidencia</field>
         <field name="res_model">evaluacion.evidencia</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">tree,form</field>

@@ -15,6 +15,9 @@
     <menuitem id="criterios_evaluacion_menu_cateory" name="Criterios de Evaluacion" parent="evaluacion_menu_root" sequence ="2"/>
     <menuitem id="action_evaluacion_criterio" sequence="1" name="Criterio" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_criterio"/>
     <menuitem id="action_evaluacion_subcriterio" sequence="2" name="Subcriterio" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_subcriterio"/>
+    <menuitem id="action_evaluacion_indicador" sequence="3" name="Indicador" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_indicador"/>
+    <menuitem id="action_evaluacion_evidencia" sequence="4" name="Evidencia" parent="criterios_evaluacion_menu_cateory" action="action_evaluacion_evidencia"/>
+
 
     <menuitem id="informacion_carrera_menu_cateory" name="Información de la Carrera" parent="evaluacion_menu_root" sequence ="3"/>
     <menuitem id="action_evaluacion_carrera" sequence="1" name="Carrera" parent="informacion_carrera_menu_cateory" action="action_evaluacion_carrera"/>

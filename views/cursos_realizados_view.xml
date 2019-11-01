@@ -44,7 +44,7 @@
 
     </record>
     <record id="action_evaluacion_cursos_realizados" model="ir.actions.act_window">
-        <field name="name">Registro de Acta de Entrega del Evaluacion</field>
+        <field name="name">Registro de Cursos Realizados por los Docentes</field>
         <field name="res_model">evaluacion.cursos_realizados</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">tree,form</field>

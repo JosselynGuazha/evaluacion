@@ -12,7 +12,6 @@
                     <group>
                         <group name="group_left">
                             <field name="nombre_subcriterio"/>
-                            <field name="tipo_subcriterio"/>
                             <field name="fecha_creacion"/>
                         </group>
                         <group name="group_right">
@@ -21,7 +20,7 @@
                         </group>
                     </group>
                     <group>
-                        <field name="evidencia_ids" nolebel="1"/>
+                        <field name="indicador_ids" nolebel="1"/>
                     </group>
 
                 </sheeet>
@@ -37,10 +36,9 @@
             <tree string="Criterio">
                 <field name="nombre_subcriterio"/>
                 <field name="estado_subcriterio"/>
-                <field name="tipo_subcriterio"/>
                 <field name="descripcion"/>
                 <field name="fecha_creacion"/>
-                <field name="evidencia_ids"/>
+                <field name="indicador_ids"/>
             </tree>
         </field>
 
