@@ -1,0 +1,51 @@
+<odoo>
+    <record id="criterio_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.indicador</field>
+        <field name="arch" type="xml">
+            <form string="Verificar el Indicador">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos del Indicador"></separator>
+                    <group name="group_top">
+                        <field name="nombre_indicador"/>
+                        <field name="descripcion"/>
+                        <field name="fecha_creacion"/>
+
+                    </group>
+                    <group>
+                        <field name="evidencia_ids" nolabel="1"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.indicador_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.indicador.tree.view</field>
+        <field name="model">evaluacion.indicador</field>
+        <field name="arch" type="xml">
+            <tree string="Indicador">
+                <field name="nombre_indicador"/>
+                <field name="descripcion"/>
+                <field name="fecha_creacion"/>
+                <field name="evidencia_ids"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_indicador" model="ir.actions.act_window">
+        <field name="name">Registro del Indicador</field>
+        <field name="res_model">evaluacion.indicador</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>
