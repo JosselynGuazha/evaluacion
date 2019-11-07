@@ -16,7 +16,6 @@ class Criterio(models.Model):
         return result
 
 
-
     nombre_criterio = fields.Char('Nombre del Criterio')
     periodo_inicio = fields.Date('Fecha de Inicio Criterio')
     periodo_fin = fields.Date('Fecha Final del Criterio')

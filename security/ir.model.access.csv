@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_evaluacion_evaluacion,evaluacion.evaluacion,model_evaluacion_evaluacion,,1,0,0,0
+
+group_evaluacion_docente_docente,evaluacion.docente,evaluacion.model_evaluacion_docente,group_evaluacion_docentes,1,1,0,0
+group_evaluacion_docente_experiencia,evaluacion.experiencia,evaluacion.model_evaluacion_experiencia,group_evaluacion_docentes,1,1,1,1
+group_evaluacion_docente_asignatura,evaluacion.asignatura,evaluacion.model_evaluacion_asignatura,group_evaluacion_docentes,1,1,1,1

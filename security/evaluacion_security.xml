@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+
+<odoo>
+    <data noupdate="0">
+        <!--
+        Parte General de los grupos
+        -->
+        <record id="module_category_evaluacion" model="ir.module.category">
+            <field name="name">Evaluacion Institucional</field>
+            <field name="sequence">22</field>
+        </record>
+
+        <!--
+        Espacios para cada grupo
+        -->
+        <!-- Administrador -->
+        <record id="group_evaluacion_manager" model="res.groups">
+            <field name="name">Evaluacion Institucional / Administrador</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+            <field name="users" eval="[(4,ref('base.user_root'))]"></field>
+        </record>
+        <!-- Docentes  -->
+        <record id="group_evaluacion_docentes" model="res.groups">
+            <field name="name">Evaluacion Institucional / Docente</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+
+        </record>
+        <!-- Rector  -->
+        <record id="group_evaluacion_rector" model="res.groups">
+            <field name="name">Evaluacion Institucional / Rector</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+
+        <!-- vicerrector academico  -->
+        <record id="group_evaluacion_vicerrectorAcademico" model="res.groups">
+            <field name="name">Evaluacion Institucional / Vicerrector Academico</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- vicerrector Adminitrativo  -->
+        <record id="group_evaluacion_vicerrectorAdministrativo" model="res.groups">
+            <field name="name">Evaluacion Institucional / Vicerrector Administrativo</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+         <!-- Secretario Abogado  -->
+        <record id="group_evaluacion_secretarioAbogado" model="res.groups">
+            <field name="name">Evaluacion Institucional / Secretario Abogado</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- Secretario Administrativo  -->
+        <record id="group_evaluacion_secretarioAdministrativo" model="res.groups">
+            <field name="name">Evaluacion Institucional / Secretario Administrativo</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- Soporte Tecnico  -->
+        <record id="group_evaluacion_soporteTecnico" model="res.groups">
+            <field name="name">Evaluacion Institucional / Soporte Técnico</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- Contabilidad  -->
+        <record id="group_evaluacion_contabilidad" model="res.groups">
+            <field name="name">Evaluacion Institucional / Contabilidad</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- Coordinadores de carrera  -->
+        <record id="group_evaluacion_coordinadorCarrera" model="res.groups">
+            <field name="name">Evaluacion Institucional / Coordinador de Carrera</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+        <!-- Biblioteca  -->
+        <record id="group_evaluacion_biblioteca" model="res.groups">
+            <field name="name">Evaluacion Institucional / Contabilidad</field>
+            <field name="category_id" ref="module_category_evaluacion"></field>
+        </record>
+
+    </data>
+</odoo>
