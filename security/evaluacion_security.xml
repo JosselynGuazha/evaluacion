@@ -77,7 +77,7 @@
 
         <!-- Biblioteca  -->
         <record id="group_evaluacion_biblioteca" model="res.groups">
-            <field name="name">Evaluacion Institucional / Contabilidad</field>
+            <field name="name">Evaluacion Institucional / Biblioteca</field>
             <field name="category_id" ref="module_category_evaluacion"></field>
         </record>
 
