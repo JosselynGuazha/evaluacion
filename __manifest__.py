@@ -44,6 +44,7 @@
         'views/evaluacion_view.xml',
         'views/referencia_view.xml',
         'views/indicador_view.xml',
+        'views/usuarios_view.xml',
         'views/main_menu_view.xml',
 
     ],

@@ -18,5 +18,6 @@ from . import cursos_realizados
 from . import asignatura
 from . import evaluacion
 from . import indicador
+from . import usuarios
 
 
