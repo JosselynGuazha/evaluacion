@@ -29,6 +29,9 @@
     <menuitem id="informacion_docente_menu_cateory" name="Información del Docente" parent="evaluacion_menu_root" sequence ="4"/>
     <menuitem id="action_evaluacion_docente" sequence="1" name="Docente" parent="informacion_docente_menu_cateory" action="action_evaluacion_docente"/>
 
+    <menuitem id="control_usuarios_menu_cateory" name="Control de usuarios" parent="evaluacion_menu_root" sequence ="5"/>
+    <menuitem id="action_evaluacion_usuarios" sequence="1" name="Usuario" parent="control_usuarios_menu_cateory" action="action_evaluacion_usuarios"/>
+
     <!-- <menuitem id="action_evaluacion_evaluacionDocente" sequence="2" name="Evaluacion Docente" parent="informacion_docente_menu_cateory" action="action_evaluacion_evaluacionDocente"/> -->
 
 

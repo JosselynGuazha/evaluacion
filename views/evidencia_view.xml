@@ -18,6 +18,7 @@
                         <field name="nombre"/>
                         <field name="referencia"/>
                         <field name="archivo"/>
+                        <field name="user_id"/>
                     </group>
 
                 </sheeet>
@@ -35,6 +36,7 @@
                 <field name="referencia"/>
                 <field name="fecha"/>
                 <field name="archivo"/>
+                <field name="user_id"/>
             </tree>
         </field>
 

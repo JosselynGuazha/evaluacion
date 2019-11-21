@@ -22,11 +22,15 @@ class Evidencia(models.Model):
     fecha = fields.Date('Fecha de carga')
     archivo = fields.Binary('Archivo')
 
+    user_id = fields.Many2one(
+        comodel_name='evaluacion.usuarios',
+        string='Responsable',
+        #default=lambda self: self.env.user.id
+    )
+
 
 
 
     criterio_id = fields.Many2one('evaluacion.criterio', 'Criterio')
     subcriterio_id = fields.Many2one('evaluacion.subcriterio', 'Subcriterio')
     indicador_id = fields.Many2one('evaluacion.indicador', 'Indicador')
-
-

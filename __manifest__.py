@@ -28,6 +28,7 @@
 
         # 'views/views.xml',
         # 'views/templates.xml',
+        'views/usuarios_view.xml',
         'views/periodo_evaluacion_view.xml',
         'views/periodo_academico_view.xml',
         'views/criterio_view.xml',
@@ -44,7 +45,6 @@
         'views/evaluacion_view.xml',
         'views/referencia_view.xml',
         'views/indicador_view.xml',
-        'views/usuarios_view.xml',
         'views/main_menu_view.xml',
 
     ],

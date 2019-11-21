@@ -27,7 +27,7 @@ class Usuarios(models.Model):
     @api.multi
     def name_get(self):
         """metodo para presentar el nombre y el codigo"""
-        return [(rec.id, ' [' + rec.usuario_name + ']' + rec.apellidos) for rec in self]
+        return [(rec.id, ' ' + rec.usuario_name + ' ' + rec.apellidos) for rec in self]
 
 
     @api.depends('fecha_nacimiento')
@@ -85,7 +85,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_docentes')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'rector':
+        if res.tipo_usuarios == 'rector':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_rector')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -94,7 +94,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_rector')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'vicerrectorAcademico':
+        if res.tipo_usuarios == 'vicerrectorAcademico':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_vicerrectorAcademico')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -103,7 +103,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_vicerrectorAcademico')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'vicerrectorAdministrativo':
+        if res.tipo_usuarios == 'vicerrectorAdministrativo':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_vicerrectorAdministrativo')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -112,7 +112,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_vicerrectorAdministrativo')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'secretarioAbogado':
+        if res.tipo_usuarios == 'secretarioAbogado':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_secretarioAbogado')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -121,7 +121,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_secretarioAbogado')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'secretarioAdministrativo':
+        if res.tipo_usuarios == 'secretarioAdministrativo':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_secretarioAdministrativo')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -130,7 +130,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_secretarioAdministrativo')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'soporteTecnico':
+        if res.tipo_usuarios == 'soporteTecnico':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_soporteTecnico')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -139,7 +139,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_soporteTecnico')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'contabilidad':
+        if res.tipo_usuarios == 'contabilidad':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_contabilidad')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -148,7 +148,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_contabilidad')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'coordinadorCarrera':
+        if res.tipo_usuarios == 'coordinadorCarrera':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_coordinadorCarrera')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -157,7 +157,7 @@ class Usuarios(models.Model):
                 done_student = self.env.ref('evaluacion.group_evaluacion_coordinadorCarrera')
                 group_list = [done_student.id, emp_grp.id]
                 res.user_id.write({'groups_id': [(6, 0, group_list)]})
-        if res.tipo_usuario == 'biblioteca':
+        if res.tipo_usuarios == 'biblioteca':
             if res.state == 'borrador':
                 admission_group = self.env.ref('evaluacion.group_evaluacion_biblioteca')
                 new_grp_list = [admission_group.id, emp_grp.id]
@@ -171,9 +171,9 @@ class Usuarios(models.Model):
     user_id = fields.Many2one('res.users', 'User ID', ondelete="cascade", required=True, delegate=True)
     usuario_name = fields.Char(string='Nombres', related='user_id.name' , requird=True)
     usuario_id = fields.Many2one('evaluacion.usuarios', 'Name')
-    tipo_usuario = fields.Selection([('docente', 'Docente'), ('coordinadorCarrera', 'Coordinador de Carrera'), ('rector', 'Rector'), ('vicerrectorAcademico', 'Vicerrector Academico'),('vicerrectorAdministrativo','Vicerrector Administrativo'),
+    tipo_usuarios = fields.Selection([('docente', 'Docente'), ('coordinadorCarrera', 'Coordinador de Carrera'), ('rector', 'Rector'), ('vicerrectorAcademico', 'Vicerrector Academico'),('vicerrectorAdministrativo','Vicerrector Administrativo'),
                                      ('secretarioAbogado','Secretario Abogado'),('secretarioAdministrativo','Secretario Administrativo'),('soporteTecnico','Soporte Tecnico'),('contabilidad','Contabilidad'),
-                                     ('biblioteca','biblioteca')],
+                                     ('biblioteca','Biblioteca')],
                                     string='Seleccione el tipo de usuarios', required=True, default='docente', track_visibility='onchange')
     apellidos = fields.Char(string='Apellidos')
     pid = fields.Char('Id del usuarios', required=True, default=lambda self: _('New'),
@@ -245,4 +245,3 @@ class Usuarios(models.Model):
     @api.multi
     def cancel_registro(self):
         self.write({'state': 'cancelar'})
-
