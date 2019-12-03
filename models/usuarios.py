@@ -192,7 +192,6 @@ class Usuarios(models.Model):
     celular = fields.Char(string="Telefono Celular")
     ciudad = fields.Char(string="Ciudad")
     state = fields.Selection([('borrador', 'Borrador'),
-
                               ('terminado', 'Terminado'),
                               ('cancelar', 'Cancelar')
                               ],
