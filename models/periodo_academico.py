@@ -12,9 +12,9 @@ class PeriodoAcademico(models.Model):
     estado = fields.Selection([
         ('activo', 'Activo'),
         ('inactivo', 'Inactivo'),
-    ], "Estado", readonly=True, default="inactivo")
+    ], "Estado", readonly=True, default="activo")
 
-    periodoEvaluacion_id = fields.Many2one('evaluacion.periodo_evaluacion', 'Periodo de Evaluación')
+
     carrera_ids = fields.One2many('evaluacion.carrera', 'periodoAcademico_id', string="Carrera")
 
 

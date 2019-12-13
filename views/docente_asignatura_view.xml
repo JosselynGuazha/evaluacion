@@ -1,0 +1,48 @@
+<odoo>
+    <record id="docente_asignatura_evaluacion_form_view" model="ir.ui.view">
+
+        <field name="name">Evaluacion ISTLA</field>
+        <field name="model">evaluacion.docente_asignatura</field>
+        <field name="arch" type="xml">
+            <form string="Verificar Asignatura del Docente">
+                <header>
+
+                </header>
+                <sheeet>
+                    <separator string=" Datos de la Asignatura"></separator>
+                    <group name="group_top">
+                        <field name="docente_id"/>
+                        <field name="carrera_id"/>
+                        <field name="ciclo_id"/>
+                        <field name="asignatura_id"/>
+                    </group>
+
+                </sheeet>
+            </form>
+        </field>
+    </record>
+
+    <!-- El siguinete bloque de codigo es para colocar una tabla con todos los registroa ingresados-->
+    <record id="evaluacion.docente_asignatura_tree_view" model="ir.ui.view">
+        <field name="name">evaluacion.docente_asignatura.tree.view</field>
+        <field name="model">evaluacion.docente_asignatura</field>
+        <field name="arch" type="xml">
+            <tree string="Docente Asignatura">
+                <field name="docente_id"/>
+                <field name="carrera_id"/>
+                <field name="ciclo_id"/>
+                <field name="asignatura_id"/>
+            </tree>
+        </field>
+
+    </record>
+    <record id="action_evaluacion_docente_asignatura" model="ir.actions.act_window">
+        <field name="name">Registro de Asignatura del Docente</field>
+        <field name="res_model">evaluacion.docente_asignatura</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+</odoo>

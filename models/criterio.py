@@ -20,8 +20,6 @@ class Criterio(models.Model):
     periodo_inicio = fields.Date('Fecha de Inicio Criterio')
     periodo_fin = fields.Date('Fecha Final del Criterio')
 
-    periodoEvaluacion_id = fields.Many2one('evaluacion.periodo_evaluacion', 'Periodo de Evaluación')
-
     subcriterio_ids = fields.One2many('evaluacion.subcriterio', 'criterio_id', string="Subcriterio")
 
  #un responsable por criterio

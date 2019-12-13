@@ -7,6 +7,10 @@ class Docente(models.Model):
     _name = 'evaluacion.docente'
     _description = 'Docente'
 
+    user_id = fields.Many2one(
+        comodel_name='evaluacion.usuarios',
+        string='Docente',
+    )
     cedula = fields.Char('Cedula de Ciudadania')
     nombre = fields.Char('Nombres del Docente')
     correo_electronico = fields.Char('Correo del Docente')
@@ -18,3 +22,4 @@ class Docente(models.Model):
     experiencia_ids = fields.One2many('evaluacion.experiencia', 'docente_id', string="Experiencia")
     referencia_ids = fields.One2many('evaluacion.referencia', 'docente_id', string="Referencia")
     evaluacion_ids = fields.One2many('evaluacion.evaluacion', 'docente_id', string="Evaluación")
+

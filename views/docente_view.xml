@@ -5,22 +5,25 @@
         <field name="model">evaluacion.docente</field>
         <field name="arch" type="xml">
             <form string="Verificar el Doconte">
-                <header>
-
-                </header>
                 <sheeet>
                     <separator string=" Datos del Docente"></separator>
                     <group name="group_top">
-                        <field name="cedula"/>
-                        <field name="nombre"/>
-                        <field name="correo_electronico"/>
-                        <field name="telefono"/>
-                        <field name="direccion"/>
+                        <group name="group_left">
+                            <field name="user_id"/>
+                            <field name="cedula"/>
+                            <field name="nombre"/>
+                            <field name="correo_electronico"/>
+                        </group>
+                        <group name="group_rigth">
+                            <field name="telefono"/>
+                            <field name="direccion"/>
+                        </group>
                         <field name="cursos_realizados_ids"/>
                         <field name="experiencia_ids"/>
                         <field name="referencia_ids"/>
-                    </group>
 
+
+                    </group>
                 </sheeet>
             </form>
         </field>
@@ -32,6 +35,7 @@
         <field name="model">evaluacion.docente</field>
         <field name="arch" type="xml">
             <tree string="Docente">
+                <field name="user_id"/>
                 <field name="cedula"/>
                 <field name="nombre"/>
                 <field name="correo_electronico"/>

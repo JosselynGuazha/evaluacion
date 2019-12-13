@@ -45,6 +45,7 @@
         'views/evaluacion_view.xml',
         'views/referencia_view.xml',
         'views/indicador_view.xml',
+        'views/docente_asignatura_view.xml',
         'views/main_menu_view.xml',
 
     ],

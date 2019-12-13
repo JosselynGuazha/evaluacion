@@ -19,7 +19,7 @@ class Evidencia(models.Model):
     elementos_fundamentales=fields.Char('Elementos fundamentales')
     nombre = fields.Char('Nombre del Archivo')
     referencia = fields.Char('Referencia del Archivo')
-    fecha = fields.Date('Fecha de carga')
+    fecha = fields.Date('Fecha de carga', default=fields.Date.context_today, readonly=True)
     archivo = fields.Binary('Archivo')
 
     user_id = fields.Many2one(

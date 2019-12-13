@@ -17,7 +17,19 @@
 
                     </group>
                     <group>
-                        <field name="evidencia_ids" nolabel="1"/>
+                        <field name="evidencia_ids" nolabel="1">
+                            <tree string="Indicador" editable="bottom">
+                                <field name="criterio_id"/>
+                                <field name="subcriterio_id"/>
+                                <field name="indicador_id"/>
+                                <field name="elementos_fundamentales"/>
+                                <field name="fecha"/>
+                                <field name="nombre"/>
+                                <field name="referencia"/>
+                                <field name="archivo"/>
+                                <field name="user_id"/>
+                            </tree>
+                        </field>
                     </group>
 
                 </sheeet>

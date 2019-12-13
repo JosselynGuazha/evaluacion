@@ -19,5 +19,5 @@ from . import asignatura
 from . import evaluacion
 from . import indicador
 from . import usuarios
-
+from . import docente_asignatura
 

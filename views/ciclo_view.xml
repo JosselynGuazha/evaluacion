@@ -20,7 +20,13 @@
                         </group>
                     </group>
                     <group>
-                        <field name="asignatura_ids" nolabel="1"/>
+                        <field name="asignatura_ids" nolabel="1">
+                            <tree string="Ciclo" editable="bottom">
+                                <field name="nombre"/>
+                                <field name="codigo"/>
+                                <field name="silabo"/>
+                            </tree>
+                        </field>
                     </group>
 
                 </sheeet>

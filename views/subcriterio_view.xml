@@ -20,8 +20,16 @@
                         </group>
                     </group>
                     <group>
-                        <field name="indicador_ids" nolebel="1"/>
+                        <field name="indicador_ids" nolabel="1">
+                            <tree string="Subcriterio" editable="bottom">
+                                <field name="nombre_indicador"/>
+                                <field name="descripcion"/>
+                                <field name="fecha_creacion"/>
+                                <field name="evidencia_ids"/>
+                            </tree>
+                        </field>
                     </group>
+
 
                 </sheeet>
             </form>

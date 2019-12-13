@@ -10,14 +10,22 @@
                 </header>
                 <sheeet>
                     <separator string=" Datos del Criterio"></separator>
-                    <group name="">
+                    <group name="group_top">
                         <field name="nombre_criterio"/>
-                        <field name="periodo_inicio"/>
                         <field name="periodo_fin"/>
+                        <field name="periodo_inicio"/>
 
                     </group>
                     <group>
-                        <field name="subcriterio_ids" nolabel="1"/>
+                        <field name="subcriterio_ids" nolabel="1">
+                            <tree string="Criterio" editable="bottom">
+                                <field name="nombre_subcriterio"/>
+                                <field name="estado_subcriterio"/>
+                                <field name="descripcion"/>
+                                <field name="fecha_creacion"/>
+                                <field name="indicador_ids"/>
+                            </tree>
+                        </field>
                     </group>
 
                 </sheeet>
