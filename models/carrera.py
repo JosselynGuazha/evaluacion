@@ -7,6 +7,13 @@ class Carrera(models.Model):
     _name = 'evaluacion.carrera'
     _description = 'Carrera'
 
+    @api.multi
+    def name_get(self):
+        result=[]
+        for record in self:
+            name = record.nombre_carrera
+            result.append((record.id, name))
+        return result
 
     nombre_carrera = fields.Char('Nombre de la Carrera')
     codigo_carrera = fields.Char('Código Carrera ')
@@ -22,5 +29,3 @@ class Carrera(models.Model):
     practicas_ids = fields.One2many('evaluacion.practicas', 'carrera_id', string="Practica")
 
     malla_ids = fields.One2many('evaluacion.malla', 'carrera_id', string="Malla")
-
-
